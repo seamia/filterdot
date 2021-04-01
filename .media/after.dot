@@ -3,129 +3,54 @@
    config file used: ./memviz.options
    (2021-03-29 16:25:12.001901 -0700 PDT m=+0.034003001) */
 digraph structs {
-  rankdir=LR;
-  node [shape=Mrecord];
+	rankdir=LR;
+	label="after"
+	tooltip="after"
+	bgcolor="transparent"
 
-  34 [label="<name> *ast.ValueSpec"];
-  34:name -> 30:name;
-  35 [label="<name> 0"];
-  33 [label="<name> Object |{<f0> Kind | 4} |{<f1> Name | \"fuzzy\"} |<f2> Decl|<f3> Data|{<f4> Type | interface \{\}(nil)}  "];
-  33:f2 -> 34:name;
-  33:f3 -> 35:name;
-  32 [label="<name> Ident |{<f0> NamePos | 104} |{<f1> Name | \"fuzzy\"} |<f2> Obj "];
-  32:f2 -> 33:name;
-  30:<31index0> -> 32:name;
-  39 [label="<name> FieldList |{<f0> Opening | 116} |{<f1> List | []*ast.Field\{\}} |{<f2> Closing | 117}  "];
-  46 [label="<name> FieldList |{<f0> Opening | 128} |{<f1> List | []*ast.Field\{\}} |{<f2> Closing | 129}  "];
-  45 [label="<name> InterfaceType |{<f0> Interface | 119} |<f1> Methods|{<f2> Incomplete | false}  "];
-  45:f1 -> 46:name;
-  48 [label="<name> *ast.InterfaceType"];
-  48:name -> 45:name;
-  43 [label="<name> Field |{<f0> Doc | *ast.CommentGroup(nil)} |{<f1> Names | []*ast.Ident\{\}} |<f2> Type|{<f3> Tag | *ast.BasicLit(nil)} |{<f4> Comment | *ast.CommentGroup(nil)}  "];
-  43:f2 -> 48:name;
-  41:<42index0> -> 43:name;
-  41 [label="<name> FieldList |{<f0> Opening | 0} |{<f1> List | {<42index0> 0}} |{<f2> Closing | 0}  "];
-  38 [label="<name> FuncType |{<f0> Func | 112} |<f1> Params|<f2> Results "];
-  38:f1 -> 39:name;
-  38:f2 -> 41:name;
-  54 [label="<name> Ident |{<f0> NamePos | 143} |{<f1> Name | \"new\"} |{<f2> Obj | *ast.Object(nil)}  "];
-  55 [label="<name> *ast.Ident"];
-  55:name -> 54:name;
-  58 [label="<name> Ident |{<f0> NamePos | 147} |{<f1> Name | \"bytes\"} |{<f2> Obj | *ast.Object(nil)}  "];
-  59 [label="<name> *ast.Ident"];
-  59:name -> 58:name;
-  60 [label="<name> Ident |{<f0> NamePos | 153} |{<f1> Name | \"Buffer\"} |{<f2> Obj | *ast.Object(nil)}  "];
-  57 [label="<name> SelectorExpr |<f0> X|<f1> Sel "];
-  57:f0 -> 59:name;
-  57:f1 -> 60:name;
-  61 [label="<name> *ast.SelectorExpr"];
-  61:name -> 57:name;
-  53:<56index0> -> 61:name;
-  53 [label="<name> CallExpr |<f0> Fun|{<f1> Lparen | 146} |{<f2> Args | {<56index0> 0}} |{<f3> Ellipsis | 0} |{<f4> Rparen | 159}  "];
-  53:f0 -> 55:name;
-  62 [label="<name> *ast.CallExpr"];
-  62:name -> 53:name;
-  51:<52index0> -> 62:name;
-  51 [label="<name> ReturnStmt |{<f0> Return | 136} |{<f1> Results | {<52index0> 0}}  "];
-  63 [label="<name> *ast.ReturnStmt"];
-  63:name -> 51:name;
-  49:<50index0> -> 63:name;
-  49 [label="<name> BlockStmt |{<f0> Lbrace | 131} |{<f1> List | {<50index0> 0}} |{<f2> Rbrace | 163}  "];
-  37 [label="<name> FuncLit |<f0> Type|<f1> Body "];
-  37:f0 -> 38:name;
-  37:f1 -> 49:name;
-  64 [label="<name> *ast.FuncLit"];
-  64:name -> 37:name;
-  30:<36index0> -> 64:name;
-  30 [label="<name> ValueSpec |{<f0> Doc | *ast.CommentGroup(nil)} |{<f1> Names | {<31index0> 0}} |{<f2> Type | ast.Expr(nil)} |{<f3> Values | {<36index0> 0}} |{<f4> Comment | *ast.CommentGroup(nil)}  "];
-  65 [label="<name> *ast.ValueSpec"];
-  65:name -> 30:name;
-  70 [label="<name> *ast.ValueSpec"];
-  70:name -> 66:name;
-  71 [label="<name> 1"];
-  69 [label="<name> Object |{<f0> Kind | 4} |{<f1> Name | \"daisy\"} |<f2> Decl|<f3> Data|{<f4> Type | interface \{\}(nil)}  "];
-  69:f2 -> 70:name;
-  69:f3 -> 71:name;
-  68 [label="<name> Ident |{<f0> NamePos | 169} |{<f1> Name | \"daisy\"} |<f2> Obj "];
-  68:f2 -> 69:name;
-  66:<67index0> -> 68:name;
-  76 [label="<name> FieldList |{<f0> Opening | 181} |{<f1> List | []*ast.Field\{\}} |{<f2> Closing | 182}  "];
-  83 [label="<name> FieldList |{<f0> Opening | 193} |{<f1> List | []*ast.Field\{\}} |{<f2> Closing | 194}  "];
-  82 [label="<name> InterfaceType |{<f0> Interface | 184} |<f1> Methods|{<f2> Incomplete | false}  "];
-  82:f1 -> 83:name;
-  85 [label="<name> *ast.InterfaceType"];
-  85:name -> 82:name;
-  80 [label="<name> Field |{<f0> Doc | *ast.CommentGroup(nil)} |{<f1> Names | []*ast.Ident\{\}} |<f2> Type|{<f3> Tag | *ast.BasicLit(nil)} |{<f4> Comment | *ast.CommentGroup(nil)}  "];
-  80:f2 -> 85:name;
-  78:<79index0> -> 80:name;
-  78 [label="<name> FieldList |{<f0> Opening | 0} |{<f1> List | {<79index0> 0}} |{<f2> Closing | 0}  "];
-  75 [label="<name> FuncType |{<f0> Func | 177} |<f1> Params|<f2> Results "];
-  75:f1 -> 76:name;
-  75:f2 -> 78:name;
-  91 [label="<name> Ident |{<f0> NamePos | 208} |{<f1> Name | \"new\"} |{<f2> Obj | *ast.Object(nil)}  "];
-  92 [label="<name> *ast.Ident"];
-  92:name -> 91:name;
-  95 [label="<name> Ident |{<f0> NamePos | 212} |{<f1> Name | \"bytes\"} |{<f2> Obj | *ast.Object(nil)}  "];
-  96 [label="<name> *ast.Ident"];
-  96:name -> 95:name;
-  97 [label="<name> Ident |{<f0> NamePos | 218} |{<f1> Name | \"Buffer\"} |{<f2> Obj | *ast.Object(nil)}  "];
-  94 [label="<name> SelectorExpr |<f0> X|<f1> Sel "];
-  94:f0 -> 96:name;
-  94:f1 -> 97:name;
-  98 [label="<name> *ast.SelectorExpr"];
-  98:name -> 94:name;
-  90:<93index0> -> 98:name;
-  90 [label="<name> CallExpr |<f0> Fun|{<f1> Lparen | 211} |{<f2> Args | {<93index0> 0}} |{<f3> Ellipsis | 0} |{<f4> Rparen | 224}  "];
-  90:f0 -> 92:name;
-  99 [label="<name> *ast.CallExpr"];
-  99:name -> 90:name;
-  88:<89index0> -> 99:name;
-  88 [label="<name> ReturnStmt |{<f0> Return | 201} |{<f1> Results | {<89index0> 0}}  "];
-  100 [label="<name> *ast.ReturnStmt"];
-  100:name -> 88:name;
-  86:<87index0> -> 100:name;
-  86 [label="<name> BlockStmt |{<f0> Lbrace | 196} |{<f1> List | {<87index0> 0}} |{<f2> Rbrace | 228}  "];
-  74 [label="<name> FuncLit |<f0> Type|<f1> Body "];
-  74:f0 -> 75:name;
-  74:f1 -> 86:name;
-  101 [label="<name> *ast.FuncLit"];
-  101:name -> 74:name;
-  73 [label="<name> CallExpr |<f0> Fun|{<f1> Lparen | 229} |{<f2> Args | []ast.Expr\{\}} |{<f3> Ellipsis | 0} |{<f4> Rparen | 230}  "];
-  73:f0 -> 101:name;
-  103 [label="<name> *ast.CallExpr"];
-  103:name -> 73:name;
-  66:<72index0> -> 103:name;
-  66 [label="<name> ValueSpec |{<f0> Doc | *ast.CommentGroup(nil)} |{<f1> Names | {<67index0> 0}} |{<f2> Type | ast.Expr(nil)} |{<f3> Values | {<72index0> 0}} |{<f4> Comment | *ast.CommentGroup(nil)}  "];
-  104 [label="<name> *ast.ValueSpec"];
-  104:name -> 66:name;
-  125 [label="<name> *ast.ValueSpec"];
-  29:<29index0> -> 65:name;
-  29:<29index1> -> 104:name;
-  29:<29index2> -> 125:name;
-  29 [label="<name> []ast.Spec |<29index0> 0|<29index1> 1|<29index2> 2 "];
-  28 [label="<name> GenDecl |{<f0> Doc | *ast.CommentGroup(nil)} |{<f1> TokPos | 96} |{<f2> Tok | 85} |{<f3> Lparen | 100} |<f4> Specs|{<f5> Rparen | 274}  "];
-  28:f4 -> 29:name;
-  126 [label="<name> *ast.GenDecl"];
-  126:name -> 28:name;
+	node [
+		shape=Mrecord
+		fontname="Cascadia Code"
+		fontsize=10
+		fillcolor="mintcream"
+		style="filled"
+	];
+
+	130 [label="<name> *ast.FuncDecl"];
+	130:name -> 127:name;
+	129 [label="<name> Object |{<f0> Kind | 5} |{<f1> Name | \"revision\"} |<f2> Decl|{<f3> Data | interface \{\}(nil)} |{<f4> Type | interface \{\}(nil)}	"];
+	129:f2 -> 130:name;
+	128 [label="<name> Ident |{<f0> NamePos | 284} |{<f1> Name | \"revision\"} |<f2> Obj "];
+	128:f2 -> 129:name;
+	132 [label="<name> FieldList |{<f0> Opening | 292} |{<f1> List | []*ast.Field\{\}} |{<f2> Closing | 293}	"];
+	138 [label="<name> Ident |{<f0> NamePos | 295} |{<f1> Name | \"int\"} |{<f2> Obj | *ast.Object(nil)}	"];
+	139 [label="<name> *ast.Ident"];
+	139:name -> 138:name;
+	136 [label="<name> Field |{<f0> Doc | *ast.CommentGroup(nil)} |{<f1> Names | []*ast.Ident\{\}} |<f2> Type|{<f3> Tag | *ast.BasicLit(nil)} |{<f4> Comment | *ast.CommentGroup(nil)}	"];
+	136:f2 -> 139:name;
+	134:<135index0> -> 136:name;
+	134 [label="<name> FieldList |{<f0> Opening | 0} |{<f1> List | {<135index0> 0}} |{<f2> Closing | 0}	"];
+	131 [label="<name> FuncType |{<f0> Func | 279} |<f1> Params|<f2> Results "];
+	131:f1 -> 132:name;
+	131:f2 -> 134:name;
+	144 [label="<name> BasicLit |{<f0> ValuePos | 310} |{<f1> Kind | 5} |{<f2> Value | \"1\"}	"];
+	145 [label="<name> *ast.BasicLit"];
+	145:name -> 144:name;
+	142:<143index0> -> 145:name;
+	142 [label="<name> ReturnStmt |{<f0> Return | 303} |{<f1> Results | {<143index0> 0}}	"];
+	146 [label="<name> *ast.ReturnStmt"];
+	146:name -> 142:name;
+	140:<141index0> -> 146:name;
+	140 [label="<name> BlockStmt |{<f0> Lbrace | 299} |{<f1> List | {<141index0> 0}} |{<f2> Rbrace | 313}	"];
+	127 [label="<name> FuncDecl |{<f0> Doc | *ast.CommentGroup(nil)} |{<f1> Recv | *ast.FieldList(nil)} |<f2> Name|<f3> Type|<f4> Body "];
+	127:f2 -> 128:name;
+	127:f3 -> 131:name;
+	127:f4 -> 140:name;
+	147 [label="<name> *ast.FuncDecl"];
+	147:name -> 127:name;
+	3:<3index3> -> 147:name;
+	3 [label="<name> []ast.Decl |<3index0> 0|<3index1> 1|<3index2> 2|<3index3> 3 "];
+	1 [label="<name> File |{<f0> Doc | *ast.CommentGroup(nil)} |{<f1> Package | 1} |<f2> Name|<f3> Decls|<f4> Scope|{<f5> Imports | {<150index0> 0|<150index1> 1}} |<f6> Unresolved|{<f7> Comments | {<152index0> 0}}	"];
+	1:f3 -> 3:name;
 }
 
